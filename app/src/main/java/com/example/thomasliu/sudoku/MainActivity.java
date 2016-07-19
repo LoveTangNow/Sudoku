@@ -120,87 +120,41 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        button11.setOnClickListener(clickListener);
-        button21.setOnClickListener(clickListener);
-        button31.setOnClickListener(clickListener);
-        button41.setOnClickListener(clickListener);
-        button51.setOnClickListener(clickListener);
-        button61.setOnClickListener(clickListener);
-        button71.setOnClickListener(clickListener);
-        button81.setOnClickListener(clickListener);
-        button91.setOnClickListener(clickListener);
+        button11.setOnClickListener(clickListener);button21.setOnClickListener(clickListener);button31.setOnClickListener(clickListener);
+        button41.setOnClickListener(clickListener);button51.setOnClickListener(clickListener);button61.setOnClickListener(clickListener);
+        button71.setOnClickListener(clickListener);button81.setOnClickListener(clickListener);button91.setOnClickListener(clickListener);
 
-        button12.setOnClickListener(clickListener);
-        button22.setOnClickListener(clickListener);
-        button42.setOnClickListener(clickListener);
-        button52.setOnClickListener(clickListener);
-        button62.setOnClickListener(clickListener);
-        button72.setOnClickListener(clickListener);
-        button82.setOnClickListener(clickListener);
-        button92.setOnClickListener(clickListener);
+        button12.setOnClickListener(clickListener);button22.setOnClickListener(clickListener);button32.setOnClickListener(clickListener);
+        button42.setOnClickListener(clickListener);button52.setOnClickListener(clickListener);button62.setOnClickListener(clickListener);
+        button72.setOnClickListener(clickListener);button82.setOnClickListener(clickListener);button92.setOnClickListener(clickListener);
         ////////////3333333333333333333333333333333333333333////////////////////
-        button13.setOnClickListener(clickListener);
-        button23.setOnClickListener(clickListener);
-        button43.setOnClickListener(clickListener);
-        button53.setOnClickListener(clickListener);
-        button63.setOnClickListener(clickListener);
-        button73.setOnClickListener(clickListener);
-        button83.setOnClickListener(clickListener);
-        button93.setOnClickListener(clickListener);
+        button13.setOnClickListener(clickListener);button23.setOnClickListener(clickListener);button33.setOnClickListener(clickListener);
+        button43.setOnClickListener(clickListener);button53.setOnClickListener(clickListener);button63.setOnClickListener(clickListener);
+        button73.setOnClickListener(clickListener);button83.setOnClickListener(clickListener);button93.setOnClickListener(clickListener);
 
-        button14.setOnClickListener(clickListener);
-        button24.setOnClickListener(clickListener);
-        button44.setOnClickListener(clickListener);
-        button54.setOnClickListener(clickListener);
-        button64.setOnClickListener(clickListener);
-        button74.setOnClickListener(clickListener);
-        button84.setOnClickListener(clickListener);
-        button94.setOnClickListener(clickListener);
+        button14.setOnClickListener(clickListener);button24.setOnClickListener(clickListener);button34.setOnClickListener(clickListener);
+        button44.setOnClickListener(clickListener);button54.setOnClickListener(clickListener);button64.setOnClickListener(clickListener);
+        button74.setOnClickListener(clickListener);button84.setOnClickListener(clickListener);button94.setOnClickListener(clickListener);
 
-        button15.setOnClickListener(clickListener);
-        button25.setOnClickListener(clickListener);
-        button45.setOnClickListener(clickListener);
-        button55.setOnClickListener(clickListener);
-        button65.setOnClickListener(clickListener);
-        button75.setOnClickListener(clickListener);
-        button85.setOnClickListener(clickListener);
-        button95.setOnClickListener(clickListener);
+        button15.setOnClickListener(clickListener);        button25.setOnClickListener(clickListener);        button35.setOnClickListener(clickListener);
+        button45.setOnClickListener(clickListener);        button55.setOnClickListener(clickListener);        button65.setOnClickListener(clickListener);
+        button75.setOnClickListener(clickListener);        button85.setOnClickListener(clickListener);        button95.setOnClickListener(clickListener);
 
-        button16.setOnClickListener(clickListener);
-        button26.setOnClickListener(clickListener);
-        button46.setOnClickListener(clickListener);
-        button56.setOnClickListener(clickListener);
-        button66.setOnClickListener(clickListener);
-        button76.setOnClickListener(clickListener);
-        button86.setOnClickListener(clickListener);
-        button96.setOnClickListener(clickListener);
+        button16.setOnClickListener(clickListener);        button26.setOnClickListener(clickListener);        button36.setOnClickListener(clickListener);
+        button46.setOnClickListener(clickListener);        button56.setOnClickListener(clickListener);        button66.setOnClickListener(clickListener);
+        button76.setOnClickListener(clickListener);        button86.setOnClickListener(clickListener);        button96.setOnClickListener(clickListener);
 
-        button17.setOnClickListener(clickListener);
-        button27.setOnClickListener(clickListener);
-        button47.setOnClickListener(clickListener);
-        button57.setOnClickListener(clickListener);
-        button67.setOnClickListener(clickListener);
-        button77.setOnClickListener(clickListener);
-        button87.setOnClickListener(clickListener);
-        button97.setOnClickListener(clickListener);
+        button17.setOnClickListener(clickListener);        button27.setOnClickListener(clickListener);        button37.setOnClickListener(clickListener);
+        button47.setOnClickListener(clickListener);        button57.setOnClickListener(clickListener);        button67.setOnClickListener(clickListener);
+        button77.setOnClickListener(clickListener);        button87.setOnClickListener(clickListener);        button97.setOnClickListener(clickListener);
 
-        button18.setOnClickListener(clickListener);
-        button28.setOnClickListener(clickListener);
-        button48.setOnClickListener(clickListener);
-        button58.setOnClickListener(clickListener);
-        button68.setOnClickListener(clickListener);
-        button78.setOnClickListener(clickListener);
-        button88.setOnClickListener(clickListener);
-        button98.setOnClickListener(clickListener);
+        button18.setOnClickListener(clickListener);        button28.setOnClickListener(clickListener);        button38.setOnClickListener(clickListener);
+        button48.setOnClickListener(clickListener);        button58.setOnClickListener(clickListener);        button68.setOnClickListener(clickListener);
+        button78.setOnClickListener(clickListener);        button88.setOnClickListener(clickListener);        button98.setOnClickListener(clickListener);
 
-        button19.setOnClickListener(clickListener);
-        button29.setOnClickListener(clickListener);
-        button49.setOnClickListener(clickListener);
-        button59.setOnClickListener(clickListener);
-        button69.setOnClickListener(clickListener);
-        button79.setOnClickListener(clickListener);
-        button89.setOnClickListener(clickListener);
-        button99.setOnClickListener(clickListener);
+        button19.setOnClickListener(clickListener);        button29.setOnClickListener(clickListener);        button39.setOnClickListener(clickListener);
+        button49.setOnClickListener(clickListener);        button59.setOnClickListener(clickListener);        button69.setOnClickListener(clickListener);
+        button79.setOnClickListener(clickListener);        button89.setOnClickListener(clickListener);        button99.setOnClickListener(clickListener);
 
 
 
@@ -371,6 +325,8 @@ public class MainActivity extends AppCompatActivity {
     //获取屏幕所有button文字的集合
 
 
+    //点击事件咯~~~
+    //yes
     private View.OnClickListener clickListener = new View.OnClickListener() {
 
         public void onClick(View v) {
