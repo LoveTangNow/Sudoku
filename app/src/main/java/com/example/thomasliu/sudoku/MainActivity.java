@@ -128,14 +128,9 @@ public class MainActivity extends AppCompatActivity {
         button42.setOnClickListener(clickListener);button52.setOnClickListener(clickListener);button62.setOnClickListener(clickListener);
         button72.setOnClickListener(clickListener);button82.setOnClickListener(clickListener);button92.setOnClickListener(clickListener);
         ////////////3333333333333333333333333333333333333333////////////////////
-        button13.setOnClickListener(clickListener);
-        button23.setOnClickListener(clickListener);
-        button43.setOnClickListener(clickListener);
-        button53.setOnClickListener(clickListener);
-        button63.setOnClickListener(clickListener);
-        button73.setOnClickListener(clickListener);
-        button83.setOnClickListener(clickListener);
-        button93.setOnClickListener(clickListener);
+        button13.setOnClickListener(clickListener);button23.setOnClickListener(clickListener);button33.setOnClickListener(clickListener);
+        button43.setOnClickListener(clickListener);button53.setOnClickListener(clickListener);button63.setOnClickListener(clickListener);
+        button73.setOnClickListener(clickListener);button83.setOnClickListener(clickListener);button93.setOnClickListener(clickListener);
 
         button14.setOnClickListener(clickListener);
         button24.setOnClickListener(clickListener);
