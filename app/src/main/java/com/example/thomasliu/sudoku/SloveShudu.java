@@ -54,7 +54,7 @@ public class SloveShudu {
     }
 
     // 输出数独方阵
-    public void Show_answer() {
+    public String Show_answer() {
         int a = 0;
         for (int i = 0; i < this.answers; i++) {
             for (int j = i * 81; j < i * 81 + 81; j++) {
@@ -67,6 +67,7 @@ public class SloveShudu {
             }
             System.out.println();
         }
+        return sd_answer;
     }
 
 }

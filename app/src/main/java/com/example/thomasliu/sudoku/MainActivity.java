@@ -8,6 +8,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     String data = "";
+    String an = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -341,7 +342,9 @@ public class MainActivity extends AppCompatActivity {
         //解出来数独
         SloveShudu sl = new SloveShudu(sd_);
         sl.resolve();
-        sl.Show_answer();
+        String answer = sl.Show_answer();
+        an = answer;
+        System.out.println(answer);
 
     }
 
@@ -358,6 +361,15 @@ public class MainActivity extends AppCompatActivity {
         }
         return 0;
     }
+
+    //判定是否是想相同了成功了
+    public boolean panding(int[][] a)
+    {
+            return false;
+    }
+
+    //获取屏幕所有button文字的集合
+
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
 
