@@ -216,101 +216,72 @@ public class MainActivity extends AppCompatActivity {
         button111.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                  if (button111.getText() != null)
                  {
                      data = (String) button111.getText();
-                 }
-            }
-        });
+                 }}});
 
         button112.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button112.getText() != null)
                 {
                     data = (String) button112.getText();
-                }
-            }
-        });
+                }}});
 
         button113.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button113.getText() != null)
                 {
                     data = (String) button113.getText();
-                }
-            }
-        });
+                }}});
 
         button114.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button114.getText() != null)
                 {
                     data = (String) button114.getText();
-                }
-            }
-        });
+                }}});
 
         button115.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button115.getText() != null)
                 {
                     data = (String) button115.getText();
-                }
-            }
-        });
+                }}});
 
         button116.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button116.getText() != null)
                 {
                     data = (String) button116.getText();
-                }
-            }
-        });
+                }}});
 
         button117.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button117.getText() != null)
                 {
                     data = (String) button117.getText();
-                }
-            }
-        });
+                }}});
 
         button118.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
                 if (button118.getText() != null)
                 {
                     data = (String) button118.getText();
-                }
-            }
-        });
+                }}});
 
         button119.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
-                if (button119.getText() != null)
-                {
-                    data = (String) button119.getText();
-                }
-            }
-        });
+                if (button119.getText() != null) {data = (String) button119.getText();
+                }}});
 
 
 
