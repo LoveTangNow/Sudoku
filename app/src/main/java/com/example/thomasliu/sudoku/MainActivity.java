@@ -1,11 +1,9 @@
 package com.example.thomasliu.sudoku;
 
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
         //第一行的Button
         final Button button11 = (Button)findViewById(R.id.hhh11);
@@ -283,8 +278,6 @@ public class MainActivity extends AppCompatActivity {
                 if (button119.getText() != null) {data = (String) button119.getText();
                 }}});
 
-
-
         //所有button文字的添加
         Addshudu sd = new Addshudu();
         int[][] sd_ = sd.add(2);
@@ -366,37 +359,18 @@ public class MainActivity extends AppCompatActivity {
         return 0;
     }
 
-    public  void xixixixixixi(final Button B, final String DATA)
-    {
-        B.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "AA", Toast.LENGTH_SHORT).show();
-                //shang_fang_wu_pai_cong_data_xie_ru(B,DATA);
-                System.out.println(DATA);
-                B.setText(DATA);
-            }
-        });
-    }
-
-    public static int  shang_fang_wu_pai_cong_data_xie_ru(Button B,String Str)
-    {
-        B.setText(Str);
-        return 0;
-    }
-
     private View.OnClickListener clickListener = new View.OnClickListener() {
 
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.hhh11:Button b2 = (Button)findViewById(R.id.hhh11);b2.setText(data);break;
-                case R.id.hhh12:Button b3 = (Button)findViewById(R.id.hhh12);b3.setText(data);break;
-                case R.id.hhh13:Button b4 = (Button)findViewById(R.id.hhh13);b4.setText(data);break;
-                case R.id.hhh14:Button b5 = (Button)findViewById(R.id.hhh14);b5.setText(data);break;
-                case R.id.hhh15:Button b6 = (Button)findViewById(R.id.hhh15);b6.setText(data);break;
-                case R.id.hhh16:Button b7 = (Button)findViewById(R.id.hhh16);b7.setText(data);break;
-                case R.id.hhh17:Button b8 = (Button)findViewById(R.id.hhh17);b8.setText(data);break;
-                case R.id.hhh18:Button b9 = (Button)findViewById(R.id.hhh18);b9.setText(data);break;
+                case R.id.hhh11:Button b2 =  (Button)findViewById(R.id.hhh11);b2.setText(data); break;
+                case R.id.hhh12:Button b3 =  (Button)findViewById(R.id.hhh12);b3.setText(data); break;
+                case R.id.hhh13:Button b4 =  (Button)findViewById(R.id.hhh13);b4.setText(data); break;
+                case R.id.hhh14:Button b5 =  (Button)findViewById(R.id.hhh14);b5.setText(data); break;
+                case R.id.hhh15:Button b6 =  (Button)findViewById(R.id.hhh15);b6.setText(data); break;
+                case R.id.hhh16:Button b7 =  (Button)findViewById(R.id.hhh16);b7.setText(data); break;
+                case R.id.hhh17:Button b8 =  (Button)findViewById(R.id.hhh17);b8.setText(data); break;
+                case R.id.hhh18:Button b9 =  (Button)findViewById(R.id.hhh18);b9.setText(data); break;
                 case R.id.hhh19:Button b10 = (Button)findViewById(R.id.hhh19);b10.setText(data);break;
                 case R.id.hhh21:Button b12 = (Button)findViewById(R.id.hhh21);b12.setText(data);break;
                 case R.id.hhh22:Button b13 = (Button)findViewById(R.id.hhh22);b13.setText(data);break;
