@@ -125,6 +125,21 @@ public class MainActivity extends AppCompatActivity {
         Button button119 = (Button)findViewById(R.id.hhh119);
 
         //所有button文字的添加
+        Addshudu sd = new Addshudu();
+        int[][] sd_ = sd.add(2);
+        // 0不算数独 1简单 2中等 3难 >=4不算数独
+        System.out.println("难度为2的数独");
+        for (int i = 0; i < sd_.length; i++) {
+            for (int j = 0; j < sd_[i].length; j++) {
+                System.out.print(sd_[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n解出来的数独：");
+        SloveShudu sl = new SloveShudu(sd_);
+        sl.resolve();
+        sl.Show_answer();
 
 
     }
