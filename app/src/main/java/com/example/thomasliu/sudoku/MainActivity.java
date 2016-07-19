@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         Button button108 = (Button)findViewById(R.id.hhh108);
         Button button109 = (Button)findViewById(R.id.hhh109);
 
+        //第十一行的Button
         Button button111 = (Button)findViewById(R.id.hhh111);
         Button button112 = (Button)findViewById(R.id.hhh112);
         Button button113 = (Button)findViewById(R.id.hhh113);
@@ -123,7 +124,15 @@ public class MainActivity extends AppCompatActivity {
         Button button118 = (Button)findViewById(R.id.hhh118);
         Button button119 = (Button)findViewById(R.id.hhh119);
 
+        //所有button文字的添加
 
+
+    }
+
+    public static int text(Button button)
+    {
+
+        return 0;
     }
 
 }
