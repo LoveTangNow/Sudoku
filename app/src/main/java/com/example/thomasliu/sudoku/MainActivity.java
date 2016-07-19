@@ -1,5 +1,6 @@
 package com.example.thomasliu.sudoku;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,105 +22,105 @@ public class MainActivity extends AppCompatActivity {
         //第一行的Button
         final Button button11 = (Button)findViewById(R.id.hhh11);
         final Button button12 = (Button)findViewById(R.id.hhh12);
-        Button button13 = (Button)findViewById(R.id.hhh13);
-        Button button14 = (Button)findViewById(R.id.hhh14);
-        Button button15 = (Button)findViewById(R.id.hhh15);
-        Button button16 = (Button)findViewById(R.id.hhh16);
-        Button button17 = (Button)findViewById(R.id.hhh17);
-        Button button18 = (Button)findViewById(R.id.hhh18);
-        Button button19 = (Button)findViewById(R.id.hhh19);
+        final Button button13 = (Button)findViewById(R.id.hhh13);
+        final Button button14 = (Button)findViewById(R.id.hhh14);
+        final  Button button15 = (Button)findViewById(R.id.hhh15);
+        final  Button button16 = (Button)findViewById(R.id.hhh16);
+        final  Button button17 = (Button)findViewById(R.id.hhh17);
+        final   Button button18 = (Button)findViewById(R.id.hhh18);
+        final   Button button19 = (Button)findViewById(R.id.hhh19);
 
         //第二行的Button
-        Button button21 = (Button)findViewById(R.id.hhh21);
-        Button button22 = (Button)findViewById(R.id.hhh22);
-        Button button23 = (Button)findViewById(R.id.hhh23);
-        Button button24 = (Button)findViewById(R.id.hhh24);
-        Button button25 = (Button)findViewById(R.id.hhh25);
-        Button button26 = (Button)findViewById(R.id.hhh26);
-        Button button27 = (Button)findViewById(R.id.hhh27);
-        Button button28 = (Button)findViewById(R.id.hhh28);
-        Button button29 = (Button)findViewById(R.id.hhh29);
+        final   Button button21 = (Button)findViewById(R.id.hhh21);
+        final    Button button22 = (Button)findViewById(R.id.hhh22);
+        final    Button button23 = (Button)findViewById(R.id.hhh23);
+        final  Button button24 = (Button)findViewById(R.id.hhh24);
+        final  Button button25 = (Button)findViewById(R.id.hhh25);
+        final  Button button26 = (Button)findViewById(R.id.hhh26);
+        final   Button button27 = (Button)findViewById(R.id.hhh27);
+        final   Button button28 = (Button)findViewById(R.id.hhh28);
+        final   Button button29 = (Button)findViewById(R.id.hhh29);
 
-        Button button31 = (Button)findViewById(R.id.hhh31);
-        Button button32 = (Button)findViewById(R.id.hhh32);
-        Button button33 = (Button)findViewById(R.id.hhh33);
-        Button button34 = (Button)findViewById(R.id.hhh34);
-        Button button35 = (Button)findViewById(R.id.hhh35);
-        Button button36 = (Button)findViewById(R.id.hhh36);
-        Button button37 = (Button)findViewById(R.id.hhh37);
-        Button button38 = (Button)findViewById(R.id.hhh38);
-        Button button39 = (Button)findViewById(R.id.hhh39);
+        final   Button button31 = (Button)findViewById(R.id.hhh31);
+        final Button button32 = (Button)findViewById(R.id.hhh32);
+        final   Button button33 = (Button)findViewById(R.id.hhh33);
+        final Button button34 = (Button)findViewById(R.id.hhh34);
+        final  Button button35 = (Button)findViewById(R.id.hhh35);
+        final  Button button36 = (Button)findViewById(R.id.hhh36);
+        final  Button button37 = (Button)findViewById(R.id.hhh37);
+        final  Button button38 = (Button)findViewById(R.id.hhh38);
+        final  Button button39 = (Button)findViewById(R.id.hhh39);
 
-        Button button41 = (Button)findViewById(R.id.hhh41);
-        Button button42 = (Button)findViewById(R.id.hhh42);
-        Button button43 = (Button)findViewById(R.id.hhh43);
-        Button button44 = (Button)findViewById(R.id.hhh44);
-        Button button45 = (Button)findViewById(R.id.hhh45);
-        Button button46 = (Button)findViewById(R.id.hhh46);
-        Button button47 = (Button)findViewById(R.id.hhh47);
-        Button button48 = (Button)findViewById(R.id.hhh48);
-        Button button49 = (Button)findViewById(R.id.hhh49);
+        final Button button41 = (Button)findViewById(R.id.hhh41);
+        final  Button button42 = (Button)findViewById(R.id.hhh42);
+        final  Button button43 = (Button)findViewById(R.id.hhh43);
+        final  Button button44 = (Button)findViewById(R.id.hhh44);
+        final  Button button45 = (Button)findViewById(R.id.hhh45);
+        final  Button button46 = (Button)findViewById(R.id.hhh46);
+        final  Button button47 = (Button)findViewById(R.id.hhh47);
+        final Button button48 = (Button)findViewById(R.id.hhh48);
+        final  Button button49 = (Button)findViewById(R.id.hhh49);
 
-        Button button51 = (Button)findViewById(R.id.hhh51);
-        Button button52 = (Button)findViewById(R.id.hhh52);
-        Button button53 = (Button)findViewById(R.id.hhh53);
-        Button button54 = (Button)findViewById(R.id.hhh54);
-        Button button55 = (Button)findViewById(R.id.hhh55);
-        Button button56 = (Button)findViewById(R.id.hhh56);
-        Button button57 = (Button)findViewById(R.id.hhh57);
-        Button button58 = (Button)findViewById(R.id.hhh58);
-        Button button59 = (Button)findViewById(R.id.hhh59);
+        final  Button button51 = (Button)findViewById(R.id.hhh51);
+        final  Button button52 = (Button)findViewById(R.id.hhh52);
+        final  Button button53 = (Button)findViewById(R.id.hhh53);
+        final  Button button54 = (Button)findViewById(R.id.hhh54);
+        final  Button button55 = (Button)findViewById(R.id.hhh55);
+        final  Button button56 = (Button)findViewById(R.id.hhh56);
+        final  Button button57 = (Button)findViewById(R.id.hhh57);
+        final  Button button58 = (Button)findViewById(R.id.hhh58);
+        final Button button59 = (Button)findViewById(R.id.hhh59);
 
-        Button button61 = (Button)findViewById(R.id.hhh61);
-        Button button62 = (Button)findViewById(R.id.hhh62);
-        Button button63 = (Button)findViewById(R.id.hhh63);
-        Button button64 = (Button)findViewById(R.id.hhh64);
-        Button button65 = (Button)findViewById(R.id.hhh65);
-        Button button66 = (Button)findViewById(R.id.hhh66);
-        Button button67 = (Button)findViewById(R.id.hhh67);
-        Button button68 = (Button)findViewById(R.id.hhh68);
-        Button button69 = (Button)findViewById(R.id.hhh69);
+        final Button button61 = (Button)findViewById(R.id.hhh61);
+        final  Button button62 = (Button)findViewById(R.id.hhh62);
+        final  Button button63 = (Button)findViewById(R.id.hhh63);
+        final  Button button64 = (Button)findViewById(R.id.hhh64);
+        final  Button button65 = (Button)findViewById(R.id.hhh65);
+        final  Button button66 = (Button)findViewById(R.id.hhh66);
+        final  Button button67 = (Button)findViewById(R.id.hhh67);
+        final  Button button68 = (Button)findViewById(R.id.hhh68);
+        final  Button button69 = (Button)findViewById(R.id.hhh69);
 
-        Button button71 = (Button)findViewById(R.id.hhh71);
-        Button button72 = (Button)findViewById(R.id.hhh72);
-        Button button73 = (Button)findViewById(R.id.hhh73);
-        Button button74 = (Button)findViewById(R.id.hhh74);
-        Button button75 = (Button)findViewById(R.id.hhh75);
-        Button button76 = (Button)findViewById(R.id.hhh76);
-        Button button77 = (Button)findViewById(R.id.hhh77);
-        Button button78 = (Button)findViewById(R.id.hhh78);
-        Button button79 = (Button)findViewById(R.id.hhh79);
+        final  Button button71 = (Button)findViewById(R.id.hhh71);
+        final  Button button72 = (Button)findViewById(R.id.hhh72);
+        final Button button73 = (Button)findViewById(R.id.hhh73);
+        final Button button74 = (Button)findViewById(R.id.hhh74);
+        final  Button button75 = (Button)findViewById(R.id.hhh75);
+        final  Button button76 = (Button)findViewById(R.id.hhh76);
+        final  Button button77 = (Button)findViewById(R.id.hhh77);
+        final   Button button78 = (Button)findViewById(R.id.hhh78);
+        final   Button button79 = (Button)findViewById(R.id.hhh79);
 
-        Button button81 = (Button)findViewById(R.id.hhh81);
-        Button button82 = (Button)findViewById(R.id.hhh82);
-        Button button83 = (Button)findViewById(R.id.hhh83);
-        Button button84 = (Button)findViewById(R.id.hhh84);
-        Button button85 = (Button)findViewById(R.id.hhh85);
-        Button button86 = (Button)findViewById(R.id.hhh86);
-        Button button87 = (Button)findViewById(R.id.hhh87);
-        Button button88 = (Button)findViewById(R.id.hhh88);
-        Button button89 = (Button)findViewById(R.id.hhh89);
+        final Button button81 = (Button)findViewById(R.id.hhh81);
+        final  Button button82 = (Button)findViewById(R.id.hhh82);
+        final  Button button83 = (Button)findViewById(R.id.hhh83);
+        final  Button button84 = (Button)findViewById(R.id.hhh84);
+        final   Button button85 = (Button)findViewById(R.id.hhh85);
+        final  Button button86 = (Button)findViewById(R.id.hhh86);
+        final  Button button87 = (Button)findViewById(R.id.hhh87);
+        final  Button button88 = (Button)findViewById(R.id.hhh88);
+        final  Button button89 = (Button)findViewById(R.id.hhh89);
 
-        Button button91 = (Button)findViewById(R.id.hhh91);
-        Button button92 = (Button)findViewById(R.id.hhh92);
-        Button button93 = (Button)findViewById(R.id.hhh93);
-        Button button94 = (Button)findViewById(R.id.hhh94);
-        Button button95 = (Button)findViewById(R.id.hhh95);
-        Button button96 = (Button)findViewById(R.id.hhh96);
-        Button button97 = (Button)findViewById(R.id.hhh97);
-        Button button98 = (Button)findViewById(R.id.hhh98);
-        Button button99 = (Button)findViewById(R.id.hhh99);
+        final   Button button91 = (Button)findViewById(R.id.hhh91);
+        final   Button button92 = (Button)findViewById(R.id.hhh92);
+        final  Button button93 = (Button)findViewById(R.id.hhh93);
+        final  Button button94 = (Button)findViewById(R.id.hhh94);
+        final  Button button95 = (Button)findViewById(R.id.hhh95);
+        final  Button button96 = (Button)findViewById(R.id.hhh96);
+        final   Button button97 = (Button)findViewById(R.id.hhh97);
+        final  Button button98 = (Button)findViewById(R.id.hhh98);
+        final  Button button99 = (Button)findViewById(R.id.hhh99);
 
         //第十一行的Button
         final Button button111 = (Button)findViewById(R.id.hhh111);
-        Button button112 = (Button)findViewById(R.id.hhh112);
-        Button button113 = (Button)findViewById(R.id.hhh113);
-        Button button114 = (Button)findViewById(R.id.hhh114);
-        Button button115 = (Button)findViewById(R.id.hhh115);
-        Button button116 = (Button)findViewById(R.id.hhh116);
-        Button button117 = (Button)findViewById(R.id.hhh117);
-        Button button118 = (Button)findViewById(R.id.hhh118);
-        Button button119 = (Button)findViewById(R.id.hhh119);
+        final  Button button112 = (Button)findViewById(R.id.hhh112);
+        final  Button button113 = (Button)findViewById(R.id.hhh113);
+        final  Button button114 = (Button)findViewById(R.id.hhh114);
+        final  Button button115 = (Button)findViewById(R.id.hhh115);
+        final  Button button116 = (Button)findViewById(R.id.hhh116);
+        final  Button button117 = (Button)findViewById(R.id.hhh117);
+        final  Button button118 = (Button)findViewById(R.id.hhh118);
+        final  Button button119 = (Button)findViewById(R.id.hhh119);
 
 
 
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
-                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+                shang_fang_wu_pai_cong_data_xie_ru(button21,data);
             }
         });
 
@@ -143,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
-                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+                shang_fang_wu_pai_cong_data_xie_ru(button31,data);
             }
         });
 
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
-                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+                shang_fang_wu_pai_cong_data_xie_ru(button41,data);
             }
         });
 
@@ -159,10 +160,124 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
-                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+                shang_fang_wu_pai_cong_data_xie_ru(button51,data);
             }
         });
-//////////////////////////////////////////////////////////////////////////
+
+        button61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button61,data);
+            }
+        });
+
+        button71.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button71,data);
+            }
+        });
+
+        button81.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button81,data);
+            }
+        });
+
+        button91.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button91,data);
+            }
+        });
+
+
+
+
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button12,data);
+            }
+        });
+
+        button22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button22,data);
+            }
+        });
+
+        button32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button32,data);
+            }
+        });
+
+        button42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button42,data);
+            }
+        });
+
+        button52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button52,data);
+            }
+        });
+
+        button62.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button62,data);
+            }
+        });
+
+        button72.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button72,data);
+            }
+        });
+
+        button82.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button82,data);
+            }
+        });
+
+        button92.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button92,data);
+            }
+        });
+
+
+
+        //////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////
+
         button111.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -171,6 +286,94 @@ public class MainActivity extends AppCompatActivity {
                  {
                      data = (String) button111.getText();
                  }
+            }
+        });
+
+        button112.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button112.getText() != null)
+                {
+                    data = (String) button112.getText();
+                }
+            }
+        });
+
+        button113.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button113.getText() != null)
+                {
+                    data = (String) button113.getText();
+                }
+            }
+        });
+
+        button114.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button114.getText() != null)
+                {
+                    data = (String) button114.getText();
+                }
+            }
+        });
+
+        button115.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button115.getText() != null)
+                {
+                    data = (String) button115.getText();
+                }
+            }
+        });
+
+        button116.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button116.getText() != null)
+                {
+                    data = (String) button116.getText();
+                }
+            }
+        });
+
+        button117.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button117.getText() != null)
+                {
+                    data = (String) button117.getText();
+                }
+            }
+        });
+
+        button118.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button118.getText() != null)
+                {
+                    data = (String) button118.getText();
+                }
+            }
+        });
+
+        button119.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                if (button119.getText() != null)
+                {
+                    data = (String) button119.getText();
+                }
             }
         });
 
@@ -285,15 +488,14 @@ public class MainActivity extends AppCompatActivity {
 
         //第十一行 就是1~10
         button111.setText("0");
-        text_give_buttons(button112,1);
-        text_give_buttons(button113,2);
-        text_give_buttons(button114,3);
-        text_give_buttons(button115,4);
-        text_give_buttons(button116,5);
-        text_give_buttons(button117,6);
-        text_give_buttons(button118,7);
-        text_give_buttons(button119,8);
-
+        button112.setText("1");
+        button113.setText("2");
+        button114.setText("3");
+        button115.setText("4");
+        button116.setText("5");
+        button117.setText("6");
+        button118.setText("7");
+        button119.setText("8");
 
         System.out.println("jiyyy");//分隔开
 
@@ -312,15 +514,22 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             button.setText(a+"");
+            button.setBackgroundColor(0xF0cccccc);
+            button.setClickable(false);
         }
         return 0;
     }
 
-    public static  String xiafang_zui_xia_yi_pai_qu_de_data(Button B)
+    public static  void xixixixixixi(final Button B, final String DATA)
     {
-        String str = (String) B.getText();
-        System.out.println(str);
-        return (str) ;
+        B.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                //shang_fang_wu_pai_cong_data_xie_ru(B,DATA);
+                B.setText(DATA);
+            }
+        });
     }
 
     public static int  shang_fang_wu_pai_cong_data_xie_ru(Button B,String Str)
