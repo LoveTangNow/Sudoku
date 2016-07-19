@@ -2,18 +2,25 @@ package com.example.thomasliu.sudoku;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    String data = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         //第一行的Button
-        Button button11 = (Button)findViewById(R.id.hhh11);
-        Button button12 = (Button)findViewById(R.id.hhh12);
+        final Button button11 = (Button)findViewById(R.id.hhh11);
+        final Button button12 = (Button)findViewById(R.id.hhh12);
         Button button13 = (Button)findViewById(R.id.hhh13);
         Button button14 = (Button)findViewById(R.id.hhh14);
         Button button15 = (Button)findViewById(R.id.hhh15);
@@ -103,18 +110,8 @@ public class MainActivity extends AppCompatActivity {
         Button button98 = (Button)findViewById(R.id.hhh98);
         Button button99 = (Button)findViewById(R.id.hhh99);
 
-        Button button101 = (Button)findViewById(R.id.hhh101);
-        Button button102 = (Button)findViewById(R.id.hhh102);
-        Button button103 = (Button)findViewById(R.id.hhh103);
-        Button button104 = (Button)findViewById(R.id.hhh104);
-        Button button105 = (Button)findViewById(R.id.hhh105);
-        Button button106 = (Button)findViewById(R.id.hhh106);
-        Button button107 = (Button)findViewById(R.id.hhh107);
-        Button button108 = (Button)findViewById(R.id.hhh108);
-        Button button109 = (Button)findViewById(R.id.hhh109);
-
         //第十一行的Button
-        Button button111 = (Button)findViewById(R.id.hhh111);
+        final Button button111 = (Button)findViewById(R.id.hhh111);
         Button button112 = (Button)findViewById(R.id.hhh112);
         Button button113 = (Button)findViewById(R.id.hhh113);
         Button button114 = (Button)findViewById(R.id.hhh114);
@@ -124,6 +121,61 @@ public class MainActivity extends AppCompatActivity {
         Button button118 = (Button)findViewById(R.id.hhh118);
         Button button119 = (Button)findViewById(R.id.hhh119);
 
+
+
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+            }
+        });
+
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+            }
+        });
+
+        button31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+            }
+        });
+
+        button41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+            }
+        });
+
+        button51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                shang_fang_wu_pai_cong_data_xie_ru(button11,data);
+            }
+        });
+//////////////////////////////////////////////////////////////////////////
+        button111.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), button12.getText(), Toast.LENGTH_SHORT).show();
+                 if (button111.getText() != null)
+                 {
+                     data = (String) button111.getText();
+                 }
+            }
+        });
+
+
+
         //所有button文字的添加
         Addshudu sd = new Addshudu();
         int[][] sd_ = sd.add(2);
@@ -131,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         //用数组存储的
         for (int i = 0; i < sd_.length; i++) {
             for (int j = 0; j < sd_[i].length; j++) {
+
                 System.out.print(sd_[i][j] + " ");
             }
             System.out.println();
@@ -231,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
         //第十行没有东西 为空
 
         //第十一行 就是1~10
-        text_give_buttons(button111,0);
+        button111.setText("0");
         text_give_buttons(button112,1);
         text_give_buttons(button113,2);
         text_give_buttons(button114,3);
@@ -242,20 +295,37 @@ public class MainActivity extends AppCompatActivity {
         text_give_buttons(button119,8);
 
 
-        System.out.println();
-        System.out.println("jiyyy");
+        System.out.println("jiyyy");//分隔开
 
         //解出来数独
         SloveShudu sl = new SloveShudu(sd_);
         sl.resolve();
         sl.Show_answer();
 
-
     }
+
 
     public static int text_give_buttons(Button button,int a)
     {
-        button.setText(a+"");
+        if (a == 0) {
+            button.setText("");
+        }
+        else {
+            button.setText(a+"");
+        }
+        return 0;
+    }
+
+    public static  String xiafang_zui_xia_yi_pai_qu_de_data(Button B)
+    {
+        String str = (String) B.getText();
+        System.out.println(str);
+        return (str) ;
+    }
+
+    public static int  shang_fang_wu_pai_cong_data_xie_ru(Button B,String Str)
+    {
+        B.setText(Str);
         return 0;
     }
 
