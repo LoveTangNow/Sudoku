@@ -228,8 +228,18 @@ public class MainActivity extends AppCompatActivity {
         text_give_buttons(button98,sd_[8][7]);
         text_give_buttons(button99,sd_[8][8]);
 
+        //第十行没有东西 为空
 
-
+        //第十一行 就是1~10
+        text_give_buttons(button111,0);
+        text_give_buttons(button112,1);
+        text_give_buttons(button113,2);
+        text_give_buttons(button114,3);
+        text_give_buttons(button115,4);
+        text_give_buttons(button116,5);
+        text_give_buttons(button117,6);
+        text_give_buttons(button118,7);
+        text_give_buttons(button119,8);
 
 
         System.out.println();
