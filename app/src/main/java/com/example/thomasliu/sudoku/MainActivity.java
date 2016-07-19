@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         button15.setOnClickListener(clickListener);
         button25.setOnClickListener(clickListener);
+        button35.setOnClickListener(clickListener);
         button45.setOnClickListener(clickListener);
         button55.setOnClickListener(clickListener);
         button65.setOnClickListener(clickListener);
@@ -147,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
         button16.setOnClickListener(clickListener);
         button26.setOnClickListener(clickListener);
+        button36.setOnClickListener(clickListener);
         button46.setOnClickListener(clickListener);
         button56.setOnClickListener(clickListener);
         button66.setOnClickListener(clickListener);
@@ -156,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         button17.setOnClickListener(clickListener);
         button27.setOnClickListener(clickListener);
+        button37.setOnClickListener(clickListener);
         button47.setOnClickListener(clickListener);
         button57.setOnClickListener(clickListener);
         button67.setOnClickListener(clickListener);
@@ -165,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
         button18.setOnClickListener(clickListener);
         button28.setOnClickListener(clickListener);
+        button38.setOnClickListener(clickListener);
         button48.setOnClickListener(clickListener);
         button58.setOnClickListener(clickListener);
         button68.setOnClickListener(clickListener);
@@ -174,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
 
         button19.setOnClickListener(clickListener);
         button29.setOnClickListener(clickListener);
+        button39.setOnClickListener(clickListener);
         button49.setOnClickListener(clickListener);
         button59.setOnClickListener(clickListener);
         button69.setOnClickListener(clickListener);
