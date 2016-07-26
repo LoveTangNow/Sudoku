@@ -1,8 +1,4 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">Sudoku</string>
-    <string name="restart">点击重新开始</string>
-=======
     <string name="app_name">数独</string>
->>>>>>> origin/newbran
+    <string name="restart">点击重新开始</string>
 </resources>
