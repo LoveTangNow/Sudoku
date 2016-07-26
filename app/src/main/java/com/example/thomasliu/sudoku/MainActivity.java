@@ -17,10 +17,6 @@ public class MainActivity extends AppCompatActivity {
     //所有的结果集合
     String an2 = "";
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
     //所有的button文字集合
     @Override
     protected void onCreate(Bundle savedInstanceState) {
