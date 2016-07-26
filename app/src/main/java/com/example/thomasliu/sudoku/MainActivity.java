@@ -1,10 +1,13 @@
 package com.example.thomasliu.sudoku;
 
 import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.view.View.OnClickListener;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.content.Intent;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -127,6 +130,15 @@ public class MainActivity extends AppCompatActivity {
         final Button button117 = (Button) findViewById(R.id.hhh117);
         final Button button118 = (Button) findViewById(R.id.hhh118);
         final Button button119 = (Button) findViewById(R.id.hhh119);
+
+        final Button buttonrestart = (Button) findViewById(R.id.restart);
+
+        buttonrestart.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                refresh();
+            }
+        });
 
 
         button11.setOnClickListener(clickListener);
@@ -644,8 +656,18 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("       ");
         System.out.println(an);
         System.out.println(an2);
-        if (an.equals(an2))
+        if (an.equals(an2)){
             Toast.makeText(getApplicationContext(), "成功", Toast.LENGTH_SHORT).show();
+            //重新开始
+            refresh();
+        }
+    }
+
+    private void refresh() {
+        finish();
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(intent);
+//        onCreate(null);
     }
 
 
