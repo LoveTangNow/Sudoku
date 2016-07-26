@@ -926,34 +926,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-
-    // 输出数组
-    public static int Arrayoutput(int[][] array) {
-        System.out.println("Array length = " + array.length);
-        for (int j2 = 0; j2 < array.length; j2++) {
-            for (int k = 0; k < array.length; k++) {
-                if (k == array.length - 1) {
-                    System.out.println(array[k][j2] + " ");
-                    // System.out.println(array.hashCode());
-                } else {
-                    System.out.print(array[k][j2] + " ");
-                }
-            }
-        }
-        return 0;
-    }
-
-    public static int Arrayoutput(int[] array) {
-        System.out.println("Array length = " + array.length);
-        for (int i = 0; i < array.length; i++) {
-            if (i == array.length - 1) {
-                System.out.println(array[i] + " ");
-                // System.out.println(array.hashCode());
-            } else {
-                System.out.print(array[i] + " ");
-            }
-        }
-        return 0;
-    }
-
 }
