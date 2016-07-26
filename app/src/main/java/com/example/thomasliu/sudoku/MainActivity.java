@@ -1,6 +1,5 @@
 package com.example.thomasliu.sudoku;
 
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
     //所有的button文字集合
 
     @Override
@@ -643,7 +641,7 @@ public class MainActivity extends AppCompatActivity {
     public  void do0()
     {
         an2 = getTexts();
-        System.out.println("");
+        System.out.println("       ");
         System.out.println(an);
         System.out.println(an2);
         if (an.equals(an2))
