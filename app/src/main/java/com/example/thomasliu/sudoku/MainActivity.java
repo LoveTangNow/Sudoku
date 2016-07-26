@@ -671,91 +671,109 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.hhh54:
                     Button b45 = (Button) findViewById(R.id.hhh54);
+                    assert b45 != null;
                     b45.setText(data);
                     do0();
                     break;
                 case R.id.hhh55:
                     Button b46 = (Button) findViewById(R.id.hhh55);
+                    assert b46 != null;
                     b46.setText(data);
                     do0();
                     break;
                 case R.id.hhh56:
                     Button b47 = (Button) findViewById(R.id.hhh56);
+                    assert b47 != null;
                     b47.setText(data);
                     do0();
                     break;
                 case R.id.hhh57:
                     Button b48 = (Button) findViewById(R.id.hhh57);
+                    assert b48 != null;
                     b48.setText(data);
                     do0();
                     break;
                 case R.id.hhh58:
                     Button b49 = (Button) findViewById(R.id.hhh58);
+                    assert b49 != null;
                     b49.setText(data);
                     do0();
                     break;
                 case R.id.hhh59:
                     Button b50 = (Button) findViewById(R.id.hhh59);
+                    assert b50 != null;
                     b50.setText(data);
                     do0();
                     break;
                 case R.id.hhh61:
                     Button b52 = (Button) findViewById(R.id.hhh61);
+                    assert b52 != null;
                     b52.setText(data);
                     do0();
                     break;
                 case R.id.hhh62:
                     Button b53 = (Button) findViewById(R.id.hhh62);
+                    assert b53 != null;
                     b53.setText(data);
                     do0();
                     break;
                 case R.id.hhh63:
                     Button b54 = (Button) findViewById(R.id.hhh63);
+                    assert b54 != null;
                     b54.setText(data);
                     do0();
                     break;
                 case R.id.hhh64:
                     Button b55 = (Button) findViewById(R.id.hhh64);
+                    assert b55 != null;
                     b55.setText(data);
                     do0();
                     break;
                 case R.id.hhh65:
                     Button b56 = (Button) findViewById(R.id.hhh65);
+                    assert b56 != null;
                     b56.setText(data);
                     do0();
                     break;
                 case R.id.hhh66:
                     Button b57 = (Button) findViewById(R.id.hhh66);
+                    assert b57 != null;
                     b57.setText(data);
                     do0();
                     break;
                 case R.id.hhh67:
                     Button b58 = (Button) findViewById(R.id.hhh67);
+                    assert b58 != null;
                     b58.setText(data);
                     do0();
                     break;
                 case R.id.hhh68:
                     Button b59 = (Button) findViewById(R.id.hhh68);
+                    assert b59 != null;
                     b59.setText(data);
                     do0();
                     break;
                 case R.id.hhh69:
                     Button b60 = (Button) findViewById(R.id.hhh69);
+                    assert b60 != null;
                     b60.setText(data);
                     do0();
                     break;
                 case R.id.hhh71:
                     Button b62 = (Button) findViewById(R.id.hhh71);
+                    assert b62 != null;
                     b62.setText(data);
                     do0();
                     break;
                 case R.id.hhh72:
                     Button b63 = (Button) findViewById(R.id.hhh72);
+                    assert b63 != null;
                     b63.setText(data);
                     do0();
                     break;
                 case R.id.hhh73:
                     Button b64 = (Button) findViewById(R.id.hhh73);
+                    assert b64 != null;
                     b64.setText(data);
                     do0();
                     break;
