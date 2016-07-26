@@ -1,7 +1,6 @@
 package com.example.thomasliu.sudoku;
 
 import android.support.v7.app.AppCompatActivity;
-import android.app.Activity;
 import android.view.View.OnClickListener;
 import android.os.Bundle;
 import android.view.View;
@@ -133,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button buttonrestart = (Button) findViewById(R.id.restart);
 
+        assert buttonrestart != null;
         buttonrestart.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -199,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
         //////////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////////
 
+        assert button111 != null;
         button111.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -208,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button112 != null;
         button112.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -217,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button113 != null;
         button113.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -226,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button114 != null;
         button114.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -235,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button115 != null;
         button115.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -244,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button116 != null;
         button116.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -253,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button117 != null;
         button117.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -262,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button118 != null;
         button118.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -271,6 +279,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        assert button119 != null;
         button119.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -285,10 +294,10 @@ public class MainActivity extends AppCompatActivity {
         int[][] sd_ = sd.add(2);
         // 0不算数独 1简单 2中等 3难 >=4不算数独
         //用数组存储的
-        for (int i = 0; i < sd_.length; i++) {
-            for (int j = 0; j < sd_[i].length; j++) {
+        for (int[] aSd_ : sd_) {
+            for (int anASd_ : aSd_) {
 
-                System.out.print(sd_[i][j] + " ");
+                System.out.print(anASd_ + " ");
             }
             System.out.println();
         }
@@ -358,7 +367,7 @@ public class MainActivity extends AppCompatActivity {
         if (a == 0) {
             button.setText("");
         } else {
-            button.setText(a + "");
+            button.setText(a);
             button.setBackgroundColor(0xF0cccccc);
             button.setClickable(false);
         }
@@ -371,96 +380,97 @@ public class MainActivity extends AppCompatActivity {
 
         String aa = "";
         ///////////11111111111111111111
-        Button B1 = (Button) findViewById(R.id.hhh11);        aa = aa + (B1.getText() == "" ? "0" : B1.getText());
-        Button B2 = (Button) findViewById(R.id.hhh12);        aa = aa + (B2.getText() == "" ? "0" : B2.getText());
-        Button B3 = (Button) findViewById(R.id.hhh13);        aa = aa + (B3.getText() == "" ? "0" : B3.getText());
-        Button B4 = (Button) findViewById(R.id.hhh14);        aa = aa + (B4.getText() == "" ? "0" : B4.getText());
-        Button B5 = (Button) findViewById(R.id.hhh15);        aa = aa + (B5.getText() == "" ? "0" : B5.getText());
-        Button B6 = (Button) findViewById(R.id.hhh16);        aa = aa + (B6.getText() == "" ? "0" : B6.getText());
-        Button B7 = (Button) findViewById(R.id.hhh17);        aa = aa + (B7.getText() == "" ? "0" : B7.getText());
-        Button B8 = (Button) findViewById(R.id.hhh18);        aa = aa + (B8.getText() == "" ? "0" : B8.getText());
-        Button B9 = (Button) findViewById(R.id.hhh19);        aa = aa + (B9.getText() == "" ? "0" : B9.getText());
+
+        Button B1 = (Button) findViewById(R.id.hhh11);        assert B1 != null;        aa = aa + (B1.getText() == "" ? "0" : B1.getText());
+        Button B2 = (Button) findViewById(R.id.hhh12);        assert B2 != null;        aa = aa + (B2.getText() == "" ? "0" : B2.getText());
+        Button B3 = (Button) findViewById(R.id.hhh13);        assert B3 != null;        aa = aa + (B3.getText() == "" ? "0" : B3.getText());
+        Button B4 = (Button) findViewById(R.id.hhh14);        assert B4 != null;        aa = aa + (B4.getText() == "" ? "0" : B4.getText());
+        Button B5 = (Button) findViewById(R.id.hhh15);        assert B5 != null;        aa = aa + (B5.getText() == "" ? "0" : B5.getText());
+        Button B6 = (Button) findViewById(R.id.hhh16);        assert B6 != null;        aa = aa + (B6.getText() == "" ? "0" : B6.getText());
+        Button B7 = (Button) findViewById(R.id.hhh17);        assert B7 != null;        aa = aa + (B7.getText() == "" ? "0" : B7.getText());
+        Button B8 = (Button) findViewById(R.id.hhh18);        assert B8 != null;        aa = aa + (B8.getText() == "" ? "0" : B8.getText());
+        Button B9 = (Button) findViewById(R.id.hhh19);        assert B9 != null;        aa = aa + (B9.getText() == "" ? "0" : B9.getText());
         //222222222222222222
-        Button B11 = (Button) findViewById(R.id.hhh21);        aa = aa + (B11.getText() == "" ? "0" : B11.getText());
-        Button B22 = (Button) findViewById(R.id.hhh22);        aa = aa + (B22.getText() == "" ? "0" : B22.getText());
-        Button B33 = (Button) findViewById(R.id.hhh23);        aa = aa + (B33.getText() == "" ? "0" : B33.getText());
-        Button B44 = (Button) findViewById(R.id.hhh24);        aa = aa + (B44.getText() == "" ? "0" : B44.getText());
-        Button B55 = (Button) findViewById(R.id.hhh25);        aa = aa + (B55.getText() == "" ? "0" : B55.getText());
-        Button B66 = (Button) findViewById(R.id.hhh26);        aa = aa + (B66.getText() == "" ? "0" : B66.getText());
-        Button B77 = (Button) findViewById(R.id.hhh27);        aa = aa + (B77.getText() == "" ? "0" : B77.getText());
-        Button B88 = (Button) findViewById(R.id.hhh28);        aa = aa + (B88.getText() == "" ? "0" : B88.getText());
-        Button B99 = (Button) findViewById(R.id.hhh29);        aa = aa + (B99.getText() == "" ? "0" : B99.getText());
+        Button B11 = (Button) findViewById(R.id.hhh21);        assert B11!= null;        aa = aa + (B11.getText() == "" ? "0" : B11.getText());
+        Button B22 = (Button) findViewById(R.id.hhh22);        assert B22!= null;        aa = aa + (B22.getText() == "" ? "0" : B22.getText());
+        Button B33 = (Button) findViewById(R.id.hhh23);        assert B33!= null;        aa = aa + (B33.getText() == "" ? "0" : B33.getText());
+        Button B44 = (Button) findViewById(R.id.hhh24);        assert B44!= null;        aa = aa + (B44.getText() == "" ? "0" : B44.getText());
+        Button B55 = (Button) findViewById(R.id.hhh25);        assert B55!= null;        aa = aa + (B55.getText() == "" ? "0" : B55.getText());
+        Button B66 = (Button) findViewById(R.id.hhh26);        assert B66!= null;        aa = aa + (B66.getText() == "" ? "0" : B66.getText());
+        Button B77 = (Button) findViewById(R.id.hhh27);        assert B77!= null;        aa = aa + (B77.getText() == "" ? "0" : B77.getText());
+        Button B88 = (Button) findViewById(R.id.hhh28);        assert B88!= null;        aa = aa + (B88.getText() == "" ? "0" : B88.getText());
+        Button B99 = (Button) findViewById(R.id.hhh29);        assert B99!= null;        aa = aa + (B99.getText() == "" ? "0" : B99.getText());
         //333333333333333333
-        Button B1a = (Button) findViewById(R.id.hhh31);        aa = aa + (B1a.getText() == "" ? "0" : B1a.getText());
-        Button B2a = (Button) findViewById(R.id.hhh32);        aa = aa + (B2a.getText() == "" ? "0" : B2a.getText());
-        Button B3a = (Button) findViewById(R.id.hhh33);        aa = aa + (B3a.getText() == "" ? "0" : B3a.getText());
-        Button B4a = (Button) findViewById(R.id.hhh34);        aa = aa + (B4a.getText() == "" ? "0" : B4a.getText());
-        Button B5a = (Button) findViewById(R.id.hhh35);        aa = aa + (B5a.getText() == "" ? "0" : B5a.getText());
-        Button B6a = (Button) findViewById(R.id.hhh36);        aa = aa + (B6a.getText() == "" ? "0" : B6a.getText());
-        Button B7a = (Button) findViewById(R.id.hhh37);        aa = aa + (B7a.getText() == "" ? "0" : B7a.getText());
-        Button B8a = (Button) findViewById(R.id.hhh38);        aa = aa + (B8a.getText() == "" ? "0" : B8a.getText());
-        Button B9a = (Button) findViewById(R.id.hhh39);        aa = aa + (B9a.getText() == "" ? "0" : B9a.getText());
+        Button B1a = (Button) findViewById(R.id.hhh31);        assert B1a!= null;        aa = aa + (B1a.getText() == "" ? "0" : B1a.getText());
+        Button B2a = (Button) findViewById(R.id.hhh32);        assert B2a!= null;        aa = aa + (B2a.getText() == "" ? "0" : B2a.getText());
+        Button B3a = (Button) findViewById(R.id.hhh33);        assert B3a!= null;        aa = aa + (B3a.getText() == "" ? "0" : B3a.getText());
+        Button B4a = (Button) findViewById(R.id.hhh34);        assert B4a!= null;        aa = aa + (B4a.getText() == "" ? "0" : B4a.getText());
+        Button B5a = (Button) findViewById(R.id.hhh35);        assert B5a!= null;        aa = aa + (B5a.getText() == "" ? "0" : B5a.getText());
+        Button B6a = (Button) findViewById(R.id.hhh36);        assert B6a!= null;        aa = aa + (B6a.getText() == "" ? "0" : B6a.getText());
+        Button B7a = (Button) findViewById(R.id.hhh37);        assert B7a!= null;        aa = aa + (B7a.getText() == "" ? "0" : B7a.getText());
+        Button B8a = (Button) findViewById(R.id.hhh38);        assert B8a!= null;        aa = aa + (B8a.getText() == "" ? "0" : B8a.getText());
+        Button B9a = (Button) findViewById(R.id.hhh39);        assert B9a!= null;        aa = aa + (B9a.getText() == "" ? "0" : B9a.getText());
         //44444444444444
-        Button B1s = (Button) findViewById(R.id.hhh41);        aa = aa + (B1s.getText() == "" ? "0" : B1s.getText());
-        Button B2s = (Button) findViewById(R.id.hhh42);        aa = aa + (B2s.getText() == "" ? "0" : B2s.getText());
-        Button B3s = (Button) findViewById(R.id.hhh43);        aa = aa + (B3s.getText() == "" ? "0" : B3s.getText());
-        Button B4s = (Button) findViewById(R.id.hhh44);        aa = aa + (B4s.getText() == "" ? "0" : B4s.getText());
-        Button B5s = (Button) findViewById(R.id.hhh45);        aa = aa + (B5s.getText() == "" ? "0" : B5s.getText());
-        Button B6s = (Button) findViewById(R.id.hhh46);        aa = aa + (B6s.getText() == "" ? "0" : B6s.getText());
-        Button B7s = (Button) findViewById(R.id.hhh47);        aa = aa + (B7s.getText() == "" ? "0" : B7s.getText());
-        Button B8s = (Button) findViewById(R.id.hhh48);        aa = aa + (B8s.getText() == "" ? "0" : B8s.getText());
-        Button B9s = (Button) findViewById(R.id.hhh49);        aa = aa + (B9s.getText() == "" ? "0" : B9s.getText());
+        Button B1s = (Button) findViewById(R.id.hhh41);        assert B1s != null;        aa = aa + (B1s.getText() == "" ? "0" : B1s.getText());
+        Button B2s = (Button) findViewById(R.id.hhh42);        assert B2s != null;        aa = aa + (B2s.getText() == "" ? "0" : B2s.getText());
+        Button B3s = (Button) findViewById(R.id.hhh43);        assert B3s != null;        aa = aa + (B3s.getText() == "" ? "0" : B3s.getText());
+        Button B4s = (Button) findViewById(R.id.hhh44);        assert B4s != null;        aa = aa + (B4s.getText() == "" ? "0" : B4s.getText());
+        Button B5s = (Button) findViewById(R.id.hhh45);        assert B5s != null;        aa = aa + (B5s.getText() == "" ? "0" : B5s.getText());
+        Button B6s = (Button) findViewById(R.id.hhh46);        assert B6s != null;        aa = aa + (B6s.getText() == "" ? "0" : B6s.getText());
+        Button B7s = (Button) findViewById(R.id.hhh47);        assert B7s != null;        aa = aa + (B7s.getText() == "" ? "0" : B7s.getText());
+        Button B8s = (Button) findViewById(R.id.hhh48);        assert B8s != null;        aa = aa + (B8s.getText() == "" ? "0" : B8s.getText());
+        Button B9s = (Button) findViewById(R.id.hhh49);        assert B9s != null;        aa = aa + (B9s.getText() == "" ? "0" : B9s.getText());
         ////555555555555555555
-        Button B1w = (Button) findViewById(R.id.hhh51);        aa = aa + (B1w.getText() == "" ? "0" : B1w.getText());
-        Button B2w = (Button) findViewById(R.id.hhh52);        aa = aa + (B2w.getText() == "" ? "0" : B2w.getText());
-        Button B3w = (Button) findViewById(R.id.hhh53);        aa = aa + (B3w.getText() == "" ? "0" : B3w.getText());
-        Button B4w = (Button) findViewById(R.id.hhh54);        aa = aa + (B4w.getText() == "" ? "0" : B4w.getText());
-        Button B5w = (Button) findViewById(R.id.hhh55);        aa = aa + (B5w.getText() == "" ? "0" : B5w.getText());
-        Button B6w = (Button) findViewById(R.id.hhh56);        aa = aa + (B6w.getText() == "" ? "0" : B6w.getText());
-        Button B7w = (Button) findViewById(R.id.hhh57);        aa = aa + (B7w.getText() == "" ? "0" : B7w.getText());
-        Button B8w = (Button) findViewById(R.id.hhh58);        aa = aa + (B8w.getText() == "" ? "0" : B8w.getText());
-        Button B9w = (Button) findViewById(R.id.hhh59);        aa = aa + (B9w.getText() == "" ? "0" : B9w.getText());
+        Button B1w = (Button) findViewById(R.id.hhh51);        assert B1w != null;        aa = aa + (B1w.getText() == "" ? "0" : B1w.getText());
+        Button B2w = (Button) findViewById(R.id.hhh52);        assert B2w != null;        aa = aa + (B2w.getText() == "" ? "0" : B2w.getText());
+        Button B3w = (Button) findViewById(R.id.hhh53);        assert B3w != null;        aa = aa + (B3w.getText() == "" ? "0" : B3w.getText());
+        Button B4w = (Button) findViewById(R.id.hhh54);        assert B4w != null;        aa = aa + (B4w.getText() == "" ? "0" : B4w.getText());
+        Button B5w = (Button) findViewById(R.id.hhh55);        assert B5w != null;        aa = aa + (B5w.getText() == "" ? "0" : B5w.getText());
+        Button B6w = (Button) findViewById(R.id.hhh56);        assert B6w != null;        aa = aa + (B6w.getText() == "" ? "0" : B6w.getText());
+        Button B7w = (Button) findViewById(R.id.hhh57);        assert B7w != null;        aa = aa + (B7w.getText() == "" ? "0" : B7w.getText());
+        Button B8w = (Button) findViewById(R.id.hhh58);        assert B8w != null;        aa = aa + (B8w.getText() == "" ? "0" : B8w.getText());
+        Button B9w = (Button) findViewById(R.id.hhh59);        assert B9w != null;        aa = aa + (B9w.getText() == "" ? "0" : B9w.getText());
 
         //666666666666666666666
-        Button B1l = (Button) findViewById(R.id.hhh61);        aa = aa + (B1l.getText() == "" ? "0" : B1l.getText());
-        Button B2l = (Button) findViewById(R.id.hhh62);        aa = aa + (B2l.getText() == "" ? "0" : B2l.getText());
-        Button B3l = (Button) findViewById(R.id.hhh63);        aa = aa + (B3l.getText() == "" ? "0" : B3l.getText());
-        Button B4l = (Button) findViewById(R.id.hhh64);        aa = aa + (B4l.getText() == "" ? "0" : B4l.getText());
-        Button B5l = (Button) findViewById(R.id.hhh65);        aa = aa + (B5l.getText() == "" ? "0" : B5l.getText());
-        Button B6l = (Button) findViewById(R.id.hhh66);        aa = aa + (B6l.getText() == "" ? "0" : B6l.getText());
-        Button B7l = (Button) findViewById(R.id.hhh67);        aa = aa + (B7l.getText() == "" ? "0" : B7l.getText());
-        Button B8l = (Button) findViewById(R.id.hhh68);        aa = aa + (B8l.getText() == "" ? "0" : B8l.getText());
-        Button B9l = (Button) findViewById(R.id.hhh69);        aa = aa + (B9l.getText() == "" ? "0" : B9l.getText());
+        Button B1l = (Button) findViewById(R.id.hhh61);        assert B1l != null;        aa = aa + (B1l.getText() == "" ? "0" : B1l.getText());
+        Button B2l = (Button) findViewById(R.id.hhh62);        assert B2l != null;        aa = aa + (B2l.getText() == "" ? "0" : B2l.getText());
+        Button B3l = (Button) findViewById(R.id.hhh63);        assert B3l != null;        aa = aa + (B3l.getText() == "" ? "0" : B3l.getText());
+        Button B4l = (Button) findViewById(R.id.hhh64);        assert B4l != null;        aa = aa + (B4l.getText() == "" ? "0" : B4l.getText());
+        Button B5l = (Button) findViewById(R.id.hhh65);        assert B5l != null;        aa = aa + (B5l.getText() == "" ? "0" : B5l.getText());
+        Button B6l = (Button) findViewById(R.id.hhh66);        assert B6l != null;        aa = aa + (B6l.getText() == "" ? "0" : B6l.getText());
+        Button B7l = (Button) findViewById(R.id.hhh67);        assert B7l != null;        aa = aa + (B7l.getText() == "" ? "0" : B7l.getText());
+        Button B8l = (Button) findViewById(R.id.hhh68);        assert B8l != null;        aa = aa + (B8l.getText() == "" ? "0" : B8l.getText());
+        Button B9l = (Button) findViewById(R.id.hhh69);        assert B9l != null;        aa = aa + (B9l.getText() == "" ? "0" : B9l.getText());
         //7777777777777777
-        Button B1q = (Button) findViewById(R.id.hhh71);        aa = aa + (B1q.getText() == "" ? "0" : B1q.getText());
-        Button B2q = (Button) findViewById(R.id.hhh72);        aa = aa + (B2q.getText() == "" ? "0" : B2q.getText());
-        Button B3q = (Button) findViewById(R.id.hhh73);        aa = aa + (B3q.getText() == "" ? "0" : B3q.getText());
-        Button B4q = (Button) findViewById(R.id.hhh74);        aa = aa + (B4q.getText() == "" ? "0" : B4q.getText());
-        Button B5q = (Button) findViewById(R.id.hhh75);        aa = aa + (B5q.getText() == "" ? "0" : B5q.getText());
-        Button B6q = (Button) findViewById(R.id.hhh76);        aa = aa + (B6q.getText() == "" ? "0" : B6q.getText());
-        Button B7q = (Button) findViewById(R.id.hhh77);        aa = aa + (B7q.getText() == "" ? "0" : B7q.getText());
-        Button B8q = (Button) findViewById(R.id.hhh78);        aa = aa + (B8q.getText() == "" ? "0" : B8q.getText());
-        Button B9q = (Button) findViewById(R.id.hhh79);        aa = aa + (B9q.getText() == "" ? "0" : B9q.getText());
+        Button B1q = (Button) findViewById(R.id.hhh71);        assert B1q != null;        aa = aa + (B1q.getText() == "" ? "0" : B1q.getText());
+        Button B2q = (Button) findViewById(R.id.hhh72);        assert B2q != null;        aa = aa + (B2q.getText() == "" ? "0" : B2q.getText());
+        Button B3q = (Button) findViewById(R.id.hhh73);        assert B3q != null;        aa = aa + (B3q.getText() == "" ? "0" : B3q.getText());
+        Button B4q = (Button) findViewById(R.id.hhh74);        assert B4q != null;        aa = aa + (B4q.getText() == "" ? "0" : B4q.getText());
+        Button B5q = (Button) findViewById(R.id.hhh75);        assert B5q != null;        aa = aa + (B5q.getText() == "" ? "0" : B5q.getText());
+        Button B6q = (Button) findViewById(R.id.hhh76);        assert B6q != null;        aa = aa + (B6q.getText() == "" ? "0" : B6q.getText());
+        Button B7q = (Button) findViewById(R.id.hhh77);        assert B7q != null;        aa = aa + (B7q.getText() == "" ? "0" : B7q.getText());
+        Button B8q = (Button) findViewById(R.id.hhh78);        assert B8q != null;        aa = aa + (B8q.getText() == "" ? "0" : B8q.getText());
+        Button B9q = (Button) findViewById(R.id.hhh79);        assert B9q != null;        aa = aa + (B9q.getText() == "" ? "0" : B9q.getText());
         //88888888888888888888888
-        Button B1b = (Button) findViewById(R.id.hhh81);        aa = aa + (B1b.getText() == "" ? "0" : B1b.getText());
-        Button B2b = (Button) findViewById(R.id.hhh82);        aa = aa + (B2b.getText() == "" ? "0" : B2b.getText());
-        Button B3b = (Button) findViewById(R.id.hhh83);        aa = aa + (B3b.getText() == "" ? "0" : B3b.getText());
-        Button B4b = (Button) findViewById(R.id.hhh84);        aa = aa + (B4b.getText() == "" ? "0" : B4b.getText());
-        Button Bb5 = (Button) findViewById(R.id.hhh85);        aa = aa + (Bb5.getText() == "" ? "0" : Bb5.getText());
-        Button B6b = (Button) findViewById(R.id.hhh86);        aa = aa + (B6b.getText() == "" ? "0" : B6b.getText());
-        Button B7b = (Button) findViewById(R.id.hhh87);        aa = aa + (B7b.getText() == "" ? "0" : B7b.getText());
-        Button B8b = (Button) findViewById(R.id.hhh88);        aa = aa + (B8b.getText() == "" ? "0" : B8b.getText());
-        Button B9b = (Button) findViewById(R.id.hhh89);        aa = aa + (B9b.getText() == "" ? "0" : B9b.getText());
+        Button B1b = (Button) findViewById(R.id.hhh81);        assert B1b != null;        aa = aa + (B1b.getText() == "" ? "0" : B1b.getText());
+        Button B2b = (Button) findViewById(R.id.hhh82);        assert B2b != null;        aa = aa + (B2b.getText() == "" ? "0" : B2b.getText());
+        Button B3b = (Button) findViewById(R.id.hhh83);        assert B3b != null;        aa = aa + (B3b.getText() == "" ? "0" : B3b.getText());
+        Button B4b = (Button) findViewById(R.id.hhh84);        assert B4b != null;        aa = aa + (B4b.getText() == "" ? "0" : B4b.getText());
+        Button Bb5 = (Button) findViewById(R.id.hhh85);        assert Bb5 != null;        aa = aa + (Bb5.getText() == "" ? "0" : Bb5.getText());
+        Button B6b = (Button) findViewById(R.id.hhh86);        assert B6b != null;        aa = aa + (B6b.getText() == "" ? "0" : B6b.getText());
+        Button B7b = (Button) findViewById(R.id.hhh87);        assert B7b != null;       aa = aa + (B7b.getText() == "" ? "0" : B7b.getText());
+        Button B8b = (Button) findViewById(R.id.hhh88);        assert B8b != null;        aa = aa + (B8b.getText() == "" ? "0" : B8b.getText());
+        Button B9b = (Button) findViewById(R.id.hhh89);        assert B9b != null;        aa = aa + (B9b.getText() == "" ? "0" : B9b.getText());
         //9999999999999999
-        Button B1j = (Button) findViewById(R.id.hhh91);        aa = aa + (B1j.getText() == "" ? "0" : B1j.getText());
-        Button B2j = (Button) findViewById(R.id.hhh92);        aa = aa + (B2j.getText() == "" ? "0" : B2j.getText());
-        Button B3j = (Button) findViewById(R.id.hhh93);        aa = aa + (B3j.getText() == "" ? "0" : B3j.getText());
-        Button B4j = (Button) findViewById(R.id.hhh94);        aa = aa + (B4j.getText() == "" ? "0" : B4j.getText());
-        Button B5j = (Button) findViewById(R.id.hhh95);        aa = aa + (B5j.getText() == "" ? "0" : B5j.getText());
-        Button B6j = (Button) findViewById(R.id.hhh96);        aa = aa + (B6j.getText() == "" ? "0" : B6j.getText());
-        Button B7j = (Button) findViewById(R.id.hhh97);        aa = aa + (B7j.getText() == "" ? "0" : B7j.getText());
-        Button B8j = (Button) findViewById(R.id.hhh98);        aa = aa + (B8j.getText() == "" ? "0" : B8j.getText());
-        Button B9j = (Button) findViewById(R.id.hhh99);        aa = aa + (B9j.getText() == "" ? "0" : B9j.getText());
+        Button B1j = (Button) findViewById(R.id.hhh91);        assert B1j != null;        aa = aa + (B1j.getText() == "" ? "0" : B1j.getText());
+        Button B2j = (Button) findViewById(R.id.hhh92);        assert B2j != null;        aa = aa + (B2j.getText() == "" ? "0" : B2j.getText());
+        Button B3j = (Button) findViewById(R.id.hhh93);        assert B3j != null;        aa = aa + (B3j.getText() == "" ? "0" : B3j.getText());
+        Button B4j = (Button) findViewById(R.id.hhh94);        assert B4j != null;        aa = aa + (B4j.getText() == "" ? "0" : B4j.getText());
+        Button B5j = (Button) findViewById(R.id.hhh95);        assert B5j != null;        aa = aa + (B5j.getText() == "" ? "0" : B5j.getText());
+        Button B6j = (Button) findViewById(R.id.hhh96);        assert B6j != null;        aa = aa + (B6j.getText() == "" ? "0" : B6j.getText());
+        Button B7j = (Button) findViewById(R.id.hhh97);        assert B7j != null;        aa = aa + (B7j.getText() == "" ? "0" : B7j.getText());
+        Button B8j = (Button) findViewById(R.id.hhh98);        assert B8j != null;        aa = aa + (B8j.getText() == "" ? "0" : B8j.getText());
+        Button B9j = (Button) findViewById(R.id.hhh99);        assert B9j != null;        aa = aa + (B9j.getText() == "" ? "0" : B9j.getText());
 
         return aa;
 
@@ -492,198 +502,170 @@ public class MainActivity extends AppCompatActivity {
 
         public void onClick(View v) {
             switch (v.getId()) {
-                case R.id.hhh11:
-                    Button b2 = (Button) findViewById(R.id.hhh11);
-                    b2.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh12:
-                    Button b3 = (Button) findViewById(R.id.hhh12);
-                    b3.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh13:
-                    Button b4 = (Button) findViewById(R.id.hhh13);
-                    b4.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh14:
-                    Button b5 = (Button) findViewById(R.id.hhh14);
-                    b5.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh15:
-                    Button b6 = (Button) findViewById(R.id.hhh15);
-                    b6.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh16:
-                    Button b7 = (Button) findViewById(R.id.hhh16);
-                    b7.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh17:
-                    Button b8 = (Button) findViewById(R.id.hhh17);
-                    b8.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh18:
-                    Button b9 = (Button) findViewById(R.id.hhh18);
-                    b9.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh19:
-                    Button b10 = (Button) findViewById(R.id.hhh19);
-                    b10.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh21:
-                    Button b12 = (Button) findViewById(R.id.hhh21);
-                    b12.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh22:
-                    Button b13 = (Button) findViewById(R.id.hhh22);
-                    b13.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh23:
-                    Button b14 = (Button) findViewById(R.id.hhh23);
-                    b14.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh24:
-                    Button b15 = (Button) findViewById(R.id.hhh24);
-                    b15.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh25:
-                    Button b16 = (Button) findViewById(R.id.hhh25);
-                    b16.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh26:
-                    Button b17 = (Button) findViewById(R.id.hhh26);
-                    b17.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh27:
-                    Button b18 = (Button) findViewById(R.id.hhh27);
-                    b18.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh28:
-                    Button b19 = (Button) findViewById(R.id.hhh28);
-                    b19.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh29:
-                    Button b20 = (Button) findViewById(R.id.hhh29);
-                    b20.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh31:
-                    Button b22 = (Button) findViewById(R.id.hhh31);
-                    b22.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh32:
-                    Button b23 = (Button) findViewById(R.id.hhh32);
-                    b23.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh33:
-                    Button b24 = (Button) findViewById(R.id.hhh33);
-                    b24.setText(data);
-                    do0();
-                    break;
-                case R.id.hhh34:
-                    Button b25 = (Button) findViewById(R.id.hhh34);
-                    b25.setText(data);
-                    do0();
-                    break;
+                case R.id.hhh11:Button b2 = (Button) findViewById(R.id.hhh11);
+                    assert b2 != null;
+                    b2.setText(data);   do0();  break;
+                case R.id.hhh12:Button b3 = (Button) findViewById(R.id.hhh12);
+                    assert b3 != null;
+                    b3.setText(data);do0();break;
+                case R.id.hhh13:Button b4 = (Button) findViewById(R.id.hhh13);
+                    assert b4 != null;
+                    b4.setText(data);do0();break;
+                case R.id.hhh14:Button b5 = (Button) findViewById(R.id.hhh14);
+                    assert b5 != null;
+                    b5.setText(data);do0();break;
+                case R.id.hhh15:Button b6 = (Button) findViewById(R.id.hhh15);
+                    assert b6 != null;
+                    b6.setText(data);do0();break;
+                case R.id.hhh16:Button b7 = (Button) findViewById(R.id.hhh16);
+                    assert b7 != null;b7.setText(data);do0();break;
+                case R.id.hhh17:Button b8 = (Button) findViewById(R.id.hhh17);
+                    assert b8 != null;
+                    b8.setText(data);do0();break;
+                case R.id.hhh18:Button b9 = (Button) findViewById(R.id.hhh18);
+                    assert b9 != null;
+                    b9.setText(data);do0();break;
+                case R.id.hhh19:Button b10 = (Button) findViewById(R.id.hhh19);
+                    assert b10 != null;
+                    b10.setText(data);do0();break;
+                case R.id.hhh21:Button b12 = (Button) findViewById(R.id.hhh21);
+                    assert b12 != null;
+                    b12.setText(data);do0();break;
+                case R.id.hhh22:Button b13 = (Button) findViewById(R.id.hhh22);
+                    assert b13 != null;
+                    b13.setText(data);do0();break;
+                case R.id.hhh23:Button b14 = (Button) findViewById(R.id.hhh23);
+                    assert b14 != null;
+                    b14.setText(data);do0();break;
+                case R.id.hhh24:Button b15 = (Button) findViewById(R.id.hhh24);
+                    assert b15 != null;
+                    b15.setText(data);do0();break;
+                case R.id.hhh25:Button b16 = (Button) findViewById(R.id.hhh25);
+                    assert b16 != null;
+                    b16.setText(data);do0();break;
+                case R.id.hhh26:Button b17 = (Button) findViewById(R.id.hhh26);
+                    assert b17 != null;
+                    b17.setText(data);do0();break;
+                case R.id.hhh27:Button b18 = (Button) findViewById(R.id.hhh27);
+                    assert b18 != null;
+                    b18.setText(data);do0();break;
+                case R.id.hhh28:Button b19 = (Button) findViewById(R.id.hhh28);
+                    assert b19 != null;
+                    b19.setText(data);do0();break;
+                case R.id.hhh29:Button b20 = (Button) findViewById(R.id.hhh29);
+                    assert b20 != null;
+                    b20.setText(data);do0();break;
+                case R.id.hhh31:Button b22 = (Button) findViewById(R.id.hhh31);
+                    assert b22 != null;
+                    b22.setText(data);do0();break;
+                case R.id.hhh32:Button b23 = (Button) findViewById(R.id.hhh32);
+                    assert b23 != null;
+                    b23.setText(data);do0();break;
+                case R.id.hhh33:Button b24 = (Button) findViewById(R.id.hhh33);
+                    assert b24 != null;
+                    b24.setText(data);do0();break;
+                case R.id.hhh34:Button b25 = (Button) findViewById(R.id.hhh34);
+                    assert b25 != null;
+                    b25.setText(data);do0();break;
                 case R.id.hhh35:
                     Button b26 = (Button) findViewById(R.id.hhh35);
+                    assert b26 != null;
                     b26.setText(data);
                     do0();
                     break;
                 case R.id.hhh36:
                     Button b27 = (Button) findViewById(R.id.hhh36);
+                    assert b27 != null;
                     b27.setText(data);
                     do0();
                     break;
                 case R.id.hhh37:
                     Button b28 = (Button) findViewById(R.id.hhh37);
+                    assert b28 != null;
                     b28.setText(data);
                     do0();
                     break;
                 case R.id.hhh38:
                     Button b29 = (Button) findViewById(R.id.hhh38);
+                    assert b29 != null;
                     b29.setText(data);
                     do0();
                     break;
                 case R.id.hhh39:
                     Button b30 = (Button) findViewById(R.id.hhh39);
+                    assert b30 != null;
                     b30.setText(data);
                     do0();
                     break;
                 case R.id.hhh41:
                     Button b32 = (Button) findViewById(R.id.hhh41);
+                    assert b32 != null;
                     b32.setText(data);
                     do0();
                     break;
                 case R.id.hhh42:
                     Button b33 = (Button) findViewById(R.id.hhh42);
+                    assert b33 != null;
                     b33.setText(data);
                     do0();
                     break;
                 case R.id.hhh43:
                     Button b34 = (Button) findViewById(R.id.hhh43);
+                    assert b34 != null;
                     b34.setText(data);
                     do0();
                     break;
                 case R.id.hhh44:
                     Button b35 = (Button) findViewById(R.id.hhh44);
+                    assert b35 != null;
                     b35.setText(data);
                     do0();
                     break;
                 case R.id.hhh45:
                     Button b36 = (Button) findViewById(R.id.hhh45);
+                    assert b36 != null;
                     b36.setText(data);
                     do0();
                     break;
                 case R.id.hhh46:
                     Button b37 = (Button) findViewById(R.id.hhh46);
+                    assert b37 != null;
                     b37.setText(data);
                     do0();
                     break;
                 case R.id.hhh47:
                     Button b38 = (Button) findViewById(R.id.hhh47);
+                    assert b38 != null;
                     b38.setText(data);
                     do0();
                     break;
                 case R.id.hhh48:
                     Button b39 = (Button) findViewById(R.id.hhh48);
+                    assert b39 != null;
                     b39.setText(data);
                     do0();
                     break;
                 case R.id.hhh49:
                     Button b40 = (Button) findViewById(R.id.hhh49);
+                    assert b40 != null;
                     b40.setText(data);
                     do0();
                     break;
                 case R.id.hhh51:
                     Button b42 = (Button) findViewById(R.id.hhh51);
+                    assert b42 != null;
                     b42.setText(data);
                     do0();
                     break;
                 case R.id.hhh52:
                     Button b43 = (Button) findViewById(R.id.hhh52);
+                    assert b43 != null;
                     b43.setText(data);
                     do0();
                     break;
                 case R.id.hhh53:
                     Button b44 = (Button) findViewById(R.id.hhh53);
+                    assert b44 != null;
                     b44.setText(data);
                     do0();
                     break;
@@ -779,121 +761,145 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.hhh74:
                     Button b65 = (Button) findViewById(R.id.hhh74);
+                    assert b65 != null;
                     b65.setText(data);
                     do0();
                     break;
                 case R.id.hhh75:
                     Button b66 = (Button) findViewById(R.id.hhh75);
+                    assert b66 != null;
                     b66.setText(data);
                     do0();
                     break;
                 case R.id.hhh76:
                     Button b67 = (Button) findViewById(R.id.hhh76);
+                    assert b67 != null;
                     b67.setText(data);
                     do0();
                     break;
                 case R.id.hhh77:
                     Button b68 = (Button) findViewById(R.id.hhh77);
+                    assert b68 != null;
                     b68.setText(data);
                     do0();
                     break;
                 case R.id.hhh78:
                     Button b69 = (Button) findViewById(R.id.hhh78);
+                    assert b69 != null;
                     b69.setText(data);
                     do0();
                     break;
                 case R.id.hhh79:
                     Button b70 = (Button) findViewById(R.id.hhh79);
+                    assert b70 != null;
                     b70.setText(data);
                     do0();
                     break;
                 case R.id.hhh81:
                     Button b72 = (Button) findViewById(R.id.hhh81);
+                    assert b72 != null;
                     b72.setText(data);
                     do0();
                     break;
                 case R.id.hhh82:
                     Button b73 = (Button) findViewById(R.id.hhh82);
+                    assert b73 != null;
                     b73.setText(data);
                     do0();
                     break;
                 case R.id.hhh83:
                     Button b74 = (Button) findViewById(R.id.hhh83);
+                    assert b74 != null;
                     b74.setText(data);
                     do0();
                     break;
                 case R.id.hhh84:
                     Button b75 = (Button) findViewById(R.id.hhh84);
+                    assert b75 != null;
                     b75.setText(data);
                     do0();
                     break;
                 case R.id.hhh85:
                     Button b76 = (Button) findViewById(R.id.hhh85);
+                    assert b76 != null;
                     b76.setText(data);
                     do0();
                     break;
                 case R.id.hhh86:
                     Button b77 = (Button) findViewById(R.id.hhh86);
+                    assert b77 != null;
                     b77.setText(data);
                     do0();
                     break;
                 case R.id.hhh87:
                     Button b78 = (Button) findViewById(R.id.hhh87);
+                    assert b78 != null;
                     b78.setText(data);
                     do0();
                     break;
                 case R.id.hhh88:
                     Button b79 = (Button) findViewById(R.id.hhh88);
+                    assert b79 != null;
                     b79.setText(data);
                     do0();
                     break;
                 case R.id.hhh89:
                     Button b80 = (Button) findViewById(R.id.hhh89);
+                    assert b80 != null;
                     b80.setText(data);
                     do0();
                     break;
                 case R.id.hhh91:
                     Button b82 = (Button) findViewById(R.id.hhh91);
+                    assert b82 != null;
                     b82.setText(data);
                     do0();
                     break;
                 case R.id.hhh92:
                     Button b83 = (Button) findViewById(R.id.hhh92);
+                    assert b83 != null;
                     b83.setText(data);
                     do0();
                     break;
                 case R.id.hhh93:
                     Button b84 = (Button) findViewById(R.id.hhh93);
+                    assert b84 != null;
                     b84.setText(data);
                     do0();
                     break;
                 case R.id.hhh94:
                     Button b85 = (Button) findViewById(R.id.hhh94);
+                    assert b85 != null;
                     b85.setText(data);
                     do0();
                     break;
                 case R.id.hhh95:
                     Button b86 = (Button) findViewById(R.id.hhh95);
+                    assert b86 != null;
                     b86.setText(data);
                     do0();
                     break;
                 case R.id.hhh96:
                     Button b87 = (Button) findViewById(R.id.hhh96);
+                    assert b87 != null;
                     b87.setText(data);
                     do0();
                     break;
                 case R.id.hhh97:
                     Button b88 = (Button) findViewById(R.id.hhh97);
+                    assert b88 != null;
                     b88.setText(data);
                     do0();
                     break;
                 case R.id.hhh98:
                     Button b89 = (Button) findViewById(R.id.hhh98);
+                    assert b89 != null;
                     b89.setText(data);
                     do0();
                     break;
                 case R.id.hhh99:
                     Button b90 = (Button) findViewById(R.id.hhh99);
+                    assert b90 != null;
                     b90.setText(data);
                     do0();
                     break;
@@ -931,5 +937,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return 0;
     }
-    
+
 }
