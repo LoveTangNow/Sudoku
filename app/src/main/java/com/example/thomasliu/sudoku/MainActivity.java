@@ -326,6 +326,88 @@ public class MainActivity extends AppCompatActivity {
         text_give_buttons(button84, sd_[7][3]);        text_give_buttons(button85, sd_[7][4]);        text_give_buttons(button86, sd_[7][5]);
         text_give_buttons(button87, sd_[7][6]);        text_give_buttons(button88, sd_[7][7]);        text_give_buttons(button89, sd_[7][8]);
 
+        text_give_buttons(button11, sd_[0][0]);
+        text_give_buttons(button12, sd_[0][1]);
+        text_give_buttons(button13, sd_[0][2]);
+        text_give_buttons(button14, sd_[0][3]);
+        text_give_buttons(button15, sd_[0][4]);
+        text_give_buttons(button16, sd_[0][5]);
+        text_give_buttons(button17, sd_[0][6]);
+        text_give_buttons(button18, sd_[0][7]);
+        text_give_buttons(button19, sd_[0][8]);
+
+        text_give_buttons(button21, sd_[1][0]);
+        text_give_buttons(button22, sd_[1][1]);
+        text_give_buttons(button23, sd_[1][2]);
+        text_give_buttons(button24, sd_[1][3]);
+        text_give_buttons(button25, sd_[1][4]);
+        text_give_buttons(button26, sd_[1][5]);
+        text_give_buttons(button27, sd_[1][6]);
+        text_give_buttons(button28, sd_[1][7]);
+        text_give_buttons(button29, sd_[1][8]);
+
+        text_give_buttons(button31, sd_[2][0]);
+        text_give_buttons(button32, sd_[2][1]);
+        text_give_buttons(button33, sd_[2][2]);
+        text_give_buttons(button34, sd_[2][3]);
+        text_give_buttons(button35, sd_[2][4]);
+        text_give_buttons(button36, sd_[2][5]);
+        text_give_buttons(button37, sd_[2][6]);
+        text_give_buttons(button38, sd_[2][7]);
+        text_give_buttons(button39, sd_[2][8]);
+
+        text_give_buttons(button41, sd_[3][0]);
+        text_give_buttons(button42, sd_[3][1]);
+        text_give_buttons(button43, sd_[3][2]);
+        text_give_buttons(button44, sd_[3][3]);
+        text_give_buttons(button45, sd_[3][4]);
+        text_give_buttons(button46, sd_[3][5]);
+        text_give_buttons(button47, sd_[3][6]);
+        text_give_buttons(button48, sd_[3][7]);
+        text_give_buttons(button49, sd_[3][8]);
+
+        System.out.println("getTexts");
+
+        text_give_buttons(button51, sd_[4][0]);
+        text_give_buttons(button52, sd_[4][1]);
+        text_give_buttons(button53, sd_[4][2]);
+        text_give_buttons(button54, sd_[4][3]);
+        text_give_buttons(button55, sd_[4][4]);
+        text_give_buttons(button56, sd_[4][5]);
+        text_give_buttons(button57, sd_[4][6]);
+        text_give_buttons(button58, sd_[4][7]);
+        text_give_buttons(button59, sd_[4][8]);
+
+        text_give_buttons(button61, sd_[5][0]);
+        text_give_buttons(button62, sd_[5][1]);
+        text_give_buttons(button63, sd_[5][2]);
+        text_give_buttons(button64, sd_[5][3]);
+        text_give_buttons(button65, sd_[5][4]);
+        text_give_buttons(button66, sd_[5][5]);
+        text_give_buttons(button67, sd_[5][6]);
+        text_give_buttons(button68, sd_[5][7]);
+        text_give_buttons(button69, sd_[5][8]);
+
+        text_give_buttons(button71, sd_[6][0]);
+        text_give_buttons(button72, sd_[6][1]);
+        text_give_buttons(button73, sd_[6][2]);
+        text_give_buttons(button74, sd_[6][3]);
+        text_give_buttons(button75, sd_[6][4]);
+        text_give_buttons(button76, sd_[6][5]);
+        text_give_buttons(button77, sd_[6][6]);
+        text_give_buttons(button78, sd_[6][7]);
+        text_give_buttons(button79, sd_[6][8]);
+
+        text_give_buttons(button81, sd_[7][0]);
+        text_give_buttons(button82, sd_[7][1]);
+        text_give_buttons(button83, sd_[7][2]);
+        text_give_buttons(button84, sd_[7][3]);
+        text_give_buttons(button85, sd_[7][4]);
+        text_give_buttons(button86, sd_[7][5]);
+        text_give_buttons(button87, sd_[7][6]);
+        text_give_buttons(button88, sd_[7][7]);
+        text_give_buttons(button89, sd_[7][8]);
+
         //第九行添加文字
         text_give_buttons(button91, sd_[8][0]);        text_give_buttons(button92, sd_[8][1]);        text_give_buttons(button93, sd_[8][2]);
         text_give_buttons(button94, sd_[8][3]);        text_give_buttons(button95, sd_[8][4]);        text_give_buttons(button96, sd_[8][5]);
