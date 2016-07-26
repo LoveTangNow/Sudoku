@@ -1,3 +1,9 @@
+
+/**
+ * Thomas Liu Created
+ * github https://github.com/LoveTangNow/Sudoku
+ * 
+ */
 package com.example.thomasliu.sudoku;
 
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.content.Intent;
-
 
 public class MainActivity extends AppCompatActivity {
 
